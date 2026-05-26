@@ -6,13 +6,6 @@
 	"author": "Me",
 	"license": "ISC",
 	"packageManager": "pnpm@10.16.0",
-	"pnpm": {
-		"peerDependencyRules": {
-			"allowAny": [
-				"*"
-			]
-		}
-	},
 	"scripts": {
 		"ng": "ng",
 		"start:dev": "pnpm ng serve",
