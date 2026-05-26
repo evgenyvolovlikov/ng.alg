@@ -38,9 +38,6 @@ export default tseslint.config(
 			'@typescript-eslint/no-unused-vars': 'off',
 			'@angular-eslint/prefer-standalone': 'error',
 		},
-
-
-		
 	},
 	{
 		files: ['**/*.html'],
