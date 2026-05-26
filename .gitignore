@@ -1,0 +1,49 @@
+# --- ЗАВИСИМОСТИ И СТОРЕДЖИ (PNPM & Node) ---
+node_modules/
+.pnpm-debug.log*
+pnpm-debug.log*
+# Локальный кэш pnpm (если используется внутри проекта)
+.pnpm-store/
+
+
+# --- ANGULAR (Сборка и Кэш) ---
+.angular/
+.cache/
+/dist/
+/out-tsc/
+# Логи ошибок Angular/НПМ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# --- НАСТРОЙКИ VS CODE ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/
+
+
+# --- СИСТЕМНЫЕ ФАЙЛЫ (macOS / Windows) ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# --- ЗАМЕТКИ И ВРЕМЕННЫЕ ФАЙЛЫ ---
+/plan.md
+/coding
+*.local
+
+
+# Остальные файлы
+/plan
+/plan-v2.md

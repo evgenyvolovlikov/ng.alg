@@ -1,0 +1,171 @@
+{
+	// --- ШРИФТ И ВИЗУАЛ ---
+	"editor.fontFamily": "SF Mono, Monaco, monospace",
+	"editor.fontSize": 14,
+	"editor.fontWeight": "normal",
+	"editor.minimap.enabled": false,
+	"editor.stickyScroll.enabled": true,
+	"editor.linkedEditing": true,
+
+	// --- ПЛАВНОСТЬ ИНТЕРФЕЙСА ---
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorBlinking": "smooth",
+	"editor.smoothScrolling": true,
+	"workbench.list.smoothScrolling": true,
+
+	// --- ФОРМАТИРОВАНИЕ И ТАБЫ ---
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"editor.semanticHighlighting.enabled": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": false,
+	"editor.formatOnSaveMode": "file",
+
+	// Принудительное форматирование стилей через Prettier
+	"[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+	// --- СКОБКИ И НАПРАВЛЯЮЩИЕ ---
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
+
+	// --- РАБОТА С ФАЙЛАМИ И ИМПОРТАМИ ---
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"files.eol": "\n",
+	"js/ts.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+
+	// --- ДЕЙСТВИЯ ПРИ СОХРАНЕНИИ И ВАЛИДАЦИЯ ---
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	"eslint.run": "onSave",
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+	"javascript.validate.enable": true,
+	"css.validate": false,
+	"scss.validate": false,
+
+	// --- ИСКЛЮЧЕНИЯ И ПОИСК ---
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/node_modules": false,
+		"**/.angular": true,
+		"**/.next": true,
+		"**/.nuxt": true,
+		"**/.parcel-cache": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/build": true,
+		"**/dist": true,
+		"**/.next": true,
+		"**/.angular": true,
+		"**/tmp": true
+	},
+
+	// --- СТИЛИ И ВАЛИДАЦИЯ ---
+	"css.completion.completePropertyWithSemicolon": false,
+	"stylelint.validate": ["css", "scss"],
+
+	// --- МОНОХРОМНАЯ ТЕМА И КАСТОМИЗАЦИЯ ЦВЕТА ---
+	"workbench.colorCustomizations": {
+		"editor.background": "#000000",
+		"editor.foreground": "#808080",
+		"sideBar.background": "#050505",
+		"sideBar.border": "#1a1a1a",
+		"activityBar.background": "#000000",
+		"activityBar.border": "#1a1a1a",
+		"editorGroupHeader.tabsBackground": "#050505",
+		"tab.activeBackground": "#000000",
+		"tab.activeBorder": "#ffffff",
+		"tab.inactiveBackground": "#050505",
+		"statusBar.background": "#000000",
+		"statusBar.border": "#1a1a1a"
+	},
+
+	"editor.semanticTokenColorCustomizations": {
+		"enabled": true,
+		"rules": {
+			"variable": "#FFFFFF",
+			"variable.local": "#FFFFFF",
+			"parameter": "#FFFFFF",
+			"property": "#FFFFFF",
+			"function": "#FFFFFF",
+			"method": "#FFFFFF",
+			"intrinsic": "#FFFFFF",
+			"type": "#808080",
+			"class": "#808080",
+			"interface": "#808080",
+			"enum": "#808080",
+			"typeParameter": "#808080",
+			"namespace": "#808080"
+		}
+	},
+
+	"editor.tokenColorCustomizations": {
+		"comments": "#808080",
+		"functions": "#FFFFFF",
+		"keywords": "#808080",
+		"numbers": "#808080",
+		"strings": "#808080",
+		"types": "#808080",
+		"variables": "#FFFFFF",
+		"textMateRules": [
+			{
+				"scope": [
+					"comment",
+					"keyword",
+					"storage",
+					"string",
+					"constant",
+					"punctuation",
+					"keyword.operator",
+					"storage.type.function.arrow",
+					"entity.name.tag",
+					"meta.tag",
+					"punctuation.definition.tag",
+					"entity.other.attribute-name",
+					"meta.attribute-name",
+					"entity.other.attribute-name.class",
+					"support.type.property-name",
+					"entity.name.tag.css",
+					"punctuation.definition.entity.css"
+				],
+				"settings": {
+					"foreground": "#808080"
+				}
+			},
+			{
+				"scope": [
+					"variable",
+					"variable.other",
+					"variable.parameter",
+					"variable.language",
+					"entity.name.function",
+					"support.function",
+					"variable.other.property",
+					"variable.other.readwrite.ts",
+					"variable.other.object.ts",
+					"support.variable.property",
+					"support.constant.property-value",
+					"constant.numeric.css"
+				],
+				"settings": {
+					"foreground": "#FFFFFF"
+				}
+			}
+		]
+	}
+}

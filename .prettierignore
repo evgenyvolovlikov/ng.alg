@@ -1,0 +1,27 @@
+# --- Сборка и зависимости ---
+node_modules/
+dist/
+build/
+.angular/
+
+# --- Локи и пакетный менеджер (pnpm) ---
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# --- Логи и системные файлы ---
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# --- Локальные переменные окружения ---
+.env
+.env.*
+!.env.example
+
+# --- Тесты и покрытие кода ---
+coverage/
+
+# --- Артефакты сборки ---
+*.map
+stats.json
