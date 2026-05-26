@@ -60,7 +60,7 @@
 				"emptyLineBeforeUnspecified": "never"
 			}
 		],
-		"declaration-no-important": true,
+		"declaration-no-important": null,
 		"max-nesting-depth": 3,
 		"color-named": "never",
 		"declaration-block-no-redundant-longhand-properties": true,
